@@ -1,0 +1,92 @@
+.navWrap {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: rgb(148, 148, 148);
+  font-family: 'Poppins', sans-serif;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: space-around;
+  width: 80vw;
+}
+
+.navLinks li{
+  list-style: none;
+}
+
+.navLinks a{
+  color: rgb(235, 235, 235);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.burger {
+  list-style: none;
+  display: none;
+}
+
+.burger div{
+  cursor: pointer;
+  width: 25px;
+  height: 4px;
+  background-color: rgb(235, 235, 235);
+  margin: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  
+  .navLinks {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: rgb(148, 148, 148);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .navLinks li{
+    opacity: 0;
+  }
+
+  .burger {
+    position: absolute;
+    right: 10%;
+    display: block;
+  }
+}
+
+.navActive {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFadeIn {
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes navLinkFadeOut {
+  from {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+}
