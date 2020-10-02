@@ -1,13 +1,13 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import style from '../styles/NavBar.module.css'
 
 const NavBar = ({ navLinks = [] }) => {
-  const [navOpened, setNavOpened] = React.useState(false);
-  const [styles, setStyles] = React.useState({ opacity: 0 });
+  const [navOpened, setNavOpened] = useState(false);
+  const [styles, setStyles] = useState({ opacity: 0 });
 
   const handleBurgerClick = () => {
     setStyles(
-      navOpened ? { name: 'navLinkFadeOut' } : { opacity: 1, name: 'navLinkFadeIn' }
+      navOpened ? { name: style.navLinkFadeOut } : { opacity: 0, name: style.navLinkFadeIn }
     );
     setNavOpened(!navOpened);
   }
@@ -23,6 +23,13 @@ const NavBar = ({ navLinks = [] }) => {
     } : styles;
   }
 
+  useEffect(() => {
+    if (window.innerWidth > 768) {
+      setStyles({ opacity: 1 })
+      setNavOpened(true)
+    }
+  }, [])
+
   return (
     <nav className={style.navWrap}>
 
@@ -30,7 +37,7 @@ const NavBar = ({ navLinks = [] }) => {
         {navLinks.map((link, i) => <li style={getStyle(i)}><a href={`#${link.toLowerCase()}`} >{link}</a></li>)}
       </ul>
 
-      <div className={style.burger} onClick={handleBurgerClick}>
+      <div className={navOpened ? style.burger + ' ' + style.toggle : style.burger} onClick={handleBurgerClick}>
         <div className={style.line1}></div>
         <div className={style.line2}></div>
         <div className={style.line3}></div>
