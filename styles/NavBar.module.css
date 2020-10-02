@@ -1,5 +1,7 @@
 .navWrap {
-  position: relative;
+  z-index: 10;
+  width: 100%;
+  position: fixed;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -39,8 +41,13 @@
   transition: all 0.3s ease;
 }
 
+@media screen and (min-width: 769px) {
+  .navLinks li[style] {
+    animation: navLinkFadeIn !important;
+  }
+}
+
 @media screen and (max-width: 768px) {
-  
   .navLinks {
     position: absolute;
     right: 0px;
@@ -96,4 +103,26 @@
 }
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.navLinks a {
+  position: relative;
+}
+
+.navLinks a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background: black;
+  position: absolute;
+  bottom: -.75em;
+  left: 0;
+  right: 0;
+  border-radius: 20%;
+  transform: scale(0, 1);
+  transition: transform ease-in-out 250ms;
+}
+
+.navLinks a:hover::before {
+  transform: scale(1, 1);
 }

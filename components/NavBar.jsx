@@ -34,7 +34,7 @@ const NavBar = ({ navLinks = [] }) => {
     <nav className={style.navWrap}>
 
       <ul className={navOpened ? style.navLinks + ' ' + style.navActive : style.navLinks}>
-        {navLinks.map((link, i) => <li style={getStyle(i)}><a href={`#${link.toLowerCase()}`} >{link}</a></li>)}
+        {navLinks.map((link, i) => <li style={getStyle(i)} key={link + i}><a href={`#${link.toLowerCase()}`} >{link}</a></li>)}
       </ul>
 
       <div className={navOpened ? style.burger + ' ' + style.toggle : style.burger} onClick={handleBurgerClick}>
