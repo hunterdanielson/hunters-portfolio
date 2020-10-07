@@ -1,10 +1,7 @@
-import React from 'react'
 import style from '../styles/Header.module.css'
 
-const Header = (props) => {
-    if (props.data) {
-        var { name, occupation, description, city } = props.data
-    }
+const Header = ({ main: { name, occupation, description, city } }) => {
+
     return (
         <>
             <header className={style.homeWrap}>

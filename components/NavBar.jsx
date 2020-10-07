@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import style from '../styles/NavBar.module.css'
 
 const NavBar = ({ navLinks = [] }) => {
