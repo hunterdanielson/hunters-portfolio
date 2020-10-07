@@ -1,20 +1,21 @@
 import React, { Component } from 'react'
+import style from '../styles/Portfolio.module.css'
 
 export default class Portfolio extends Component {
     render() {
         if (this.props.data) {
             var projects = this.props.data.projects.map(function (projects) {
-                var projectImage = 'images/portfolio/' + projects.image;
+                var projectImage = '/portfolio/' + projects.image;
                 return <div key={projects.title} className="columns portfolio-item">
-                    <div className="item-wrap">
+                    <div className={style.card}>
                         <a href={projects.url} title={projects.title}>
-                            <img alt={projects.title} src={projectImage} />
-                            <div className="overlay">
+                            <img alt={projects.title} src={projectImage} className={style.projectImage} />
+                            {/* <div className="overlay">
                                 <div className="portfolio-item-meta">
                                     <h5>{projects.title}</h5>
                                     <p>{projects.category}</p>
                                 </div>
-                            </div>
+                            </div> */}
                             <div className="link-icon"><i className="fa fa-link"></i></div>
                         </a>
                     </div>
@@ -28,19 +29,13 @@ export default class Portfolio extends Component {
         }
 
         return (
-            <section id="works">
+            <section id="works" className={style.projectsContainer}>
+                <h1>Check Out Some of My Works.</h1>
 
-                <div className="row">
-
-                    <div className="twelve columns collapsed">
-
-                        <h1>Check Out Some of My Works.</h1>
-
-                        <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
-                            {projects}
-                        </div>
-                    </div>
+                <div id="portfolio-wrapper" className={style.grid}>
+                    {projects}
                 </div>
+
             </section>
         )
     }

@@ -31,19 +31,20 @@ const NavBar = ({ navLinks = [] }) => {
   }, [])
 
   return (
-    <nav className={style.navWrap}>
+    <>
+      <div className={style.backDropFilter}></div>
+      <nav className={style.navWrap}>
+        <ul className={navOpened ? style.navLinks + ' ' + style.navActive : style.navLinks}>
+          {navLinks.map((link, i) => <li style={getStyle(i)} key={link + i}><a href={`#${link.toLowerCase()}`} >{link}</a></li>)}
+        </ul>
 
-      <ul className={navOpened ? style.navLinks + ' ' + style.navActive : style.navLinks}>
-        {navLinks.map((link, i) => <li style={getStyle(i)} key={link + i}><a href={`#${link.toLowerCase()}`} >{link}</a></li>)}
-      </ul>
-
-      <div className={navOpened ? style.burger + ' ' + style.toggle : style.burger} onClick={handleBurgerClick}>
-        <div className={style.line1}></div>
-        <div className={style.line2}></div>
-        <div className={style.line3}></div>
-      </div>
-
-    </nav>
+        <div className={navOpened ? style.burger + ' ' + style.toggle : style.burger} onClick={handleBurgerClick}>
+          <div className={style.line1}></div>
+          <div className={style.line2}></div>
+          <div className={style.line3}></div>
+        </div>
+      </nav>
+    </>
   )
 }
 

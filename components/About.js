@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import style from '../styles/About.module.css'
 
 export default class About extends Component {
     render() {
@@ -8,7 +9,7 @@ export default class About extends Component {
         }
 
         return (
-            <section id="about">
+            <section className={style.aboutContainer} id="about">
                 <div className="row">
                     <div className="three columns">
                         <img className="profile-pic" src={profilePic} alt="Hunter Danielson Profile Pic" />

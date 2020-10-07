@@ -1,13 +1,20 @@
 .navWrap {
-  z-index: 10;
+  z-index: 2;
   width: 100%;
   position: fixed;
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: rgb(148, 148, 148);
   font-family: 'Poppins', sans-serif;
+  border-bottom: 2px solid black;
+}
+
+.backDropFilter {
+  width: 100%;
+  position: fixed;
+  min-height: 8vh;
+  backdrop-filter: blur(3px) brightness(60%);
 }
 
 .navLinks {
@@ -49,11 +56,12 @@
 
 @media screen and (max-width: 768px) {
   .navLinks {
+    backdrop-filter: blur(3px) brightness(60%);
     position: absolute;
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: rgb(148, 148, 148);
+    border-left: 2px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,7 +121,7 @@
   content: '';
   display: block;
   height: 5px;
-  background: black;
+  background: rgb(235, 235, 235);
   position: absolute;
   bottom: -.75em;
   left: 0;
