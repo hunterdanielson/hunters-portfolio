@@ -1,6 +1,6 @@
 .navWrap {
-  z-index: 2;
-  width: 100%;
+  z-index: 99;
+  width: 100vw;
   position: fixed;
   display: flex;
   justify-content: space-around;
@@ -11,8 +11,9 @@
 }
 
 .backDropFilter {
-  width: 100%;
+  width: 100vw;
   position: fixed;
+  z-index: 99;
   min-height: 8vh;
   backdrop-filter: blur(3px) brightness(60%);
 }

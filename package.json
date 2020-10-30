@@ -10,6 +10,13 @@
   "dependencies": {
     "next": "9.5.3",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "sass": "^1.27.0",
+    "scss": "^0.2.4"
+  },
+  "devDependencies": {
+    "@iconify/icons-logos": "^1.0.12",
+    "@iconify/icons-vscode-icons": "^1.0.2",
+    "@iconify/react": "^1.1.3"
   }
 }

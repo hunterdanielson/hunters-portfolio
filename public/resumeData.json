@@ -54,75 +54,121 @@
     ],
     "skills": [
       {
-        "name": "C++",
-        "image": "c++.png"
-      },
-      {
-        "name": "Python",
-        "image": "python.png"
-      },
-      {
-        "name": "GitHub",
-        "image": "github.png"
-      },
-      {
-        "name": "Postgress",
-        "image": "postgress.png"
-      },
-      {
-        "name": "PHP",
-        "image": "php.png"
-      },
-      {
-        "name": "React",
-        "image": "react.png"
-      },
-      {
         "name": "JavaScript",
-        "image": "javascript.png"
+        "image": "javascript.png",
+        "icon": "devicon-javascript-plain colored"
       },
       {
         "name": "HTML",
-        "image": "html.png"
+        "image": "",
+        "icon": "devicon-html5-plain colored"
       },
       {
         "name": "CSS",
-        "image": "css.png"
+        "image": "css.png",
+        "icon": "devicon-css3-plain colored"
+      },
+      {
+        "name": "React",
+        "image": "",
+        "icon": "devicon-react-original colored"
+      },
+      {
+        "name": "Python",
+        "image": "python.png",
+        "icon": "devicon-python-plain colored"
+      },
+      {
+        "name": "C++",
+        "image": "c++.png",
+        "icon": "devicon-cplusplus-plain colored"
+      },
+      {
+        "name": "Postgresql",
+        "image": "",
+        "icon": "devicon-postgresql-plain colored"
+      },
+      {
+        "name": "Redux",
+        "image": "",
+        "icon": "devicon-redux- colored"
+      },
+      {
+        "name": "GitHub",
+        "image": "github.png",
+        "icon": "devicon-github-plain colored"
       },
       {
         "name": "Jest",
-        "image": "jest.png"
+        "image": "jest.png",
+        "icon": "devicon-nodejs-plain colored"
+      },
+      {
+        "name": "Node.js",
+        "image": "",
+        "icon": "devicon-nodejs-plain colored"
+      },
+      {
+        "name": "PHP",
+        "image": "php.png",
+        "icon": "devicon-php-plain colored"
       }
     ]
   },
   "projects": [
     {
       "title": "JHEMM-Fighters",
-      "category": "Game built in vanilla JS utilizing local storage by a team of 5. Players take turns attacking and defending until only one remains!",
+      "description": "Game built in vanilla JS utilizing local storage by a team of 5. Players take turns attacking and defending until only one remains!",
       "image": "jhemm-fighters-picture.png",
       "url": "https://team-jhemm-fighters.github.io/jhemm-fighters/",
-      "github": "https://github.com/team-jhemm-fighters/jhemm-fighters"
+      "githubFE": "https://github.com/team-jhemm-fighters/jhemm-fighters",
+      "tech": [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "LocalStorage",
+        "QUnit"
+      ]
     },
     {
       "title": "Last Hope",
-      "category": "Game built in React by a team of 3. It has user authentication and stores data on a backend that we built as well. It also connects to an external colors api.",
+      "description": "Game built in React by a team of 3. It has user authentication and stores data on a backend that we built as well. It also connects to an external colors api.",
       "image": "lasthope.png",
       "url": "https://optimistic-hugle-af2d71.netlify.app/",
-      "github": "https://github.com/3rd-git-from-the-hub"
+      "githubFE": "https://github.com/3rd-git-from-the-hub",
+      "tech": [
+        "React",
+        "JavaScript",
+        "CSS",
+        "Three.js",
+        "Express",
+        "PostgreSQL"
+      ]
     },
     {
       "title": "Memory Organizer",
-      "category": "Backend (Node.js, Express, MongoDB) that provides a space for users to upload photos and notes about their memories. All photos utilize the Google Cloud Vision API to auto-tag the images for increased searchability.",
+      "description": "Backend (Node.js, Express, MongoDB) that provides a space for users to upload photos and notes about their memories. All photos utilize the Google Cloud Vision API to auto-tag the images for increased searchability.",
       "image": "memoryOrganizer.jpg",
       "url": "https://github.com/MemoryOrganizer/memory-organizer-be",
-      "github": "https://github.com/MemoryOrganizer/memory-organizer-be"
+      "githubFE": "",
+      "githubBE": "https://github.com/MemoryOrganizer/memory-organizer-be",
+      "tech": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ]
     },
     {
       "title": "Pokedex",
-      "category": "A pokedex clone, built in React, that utilizes Alchemy Code Labs pokemon API to retrieve data. Has ability to filter results based on the users request.",
+      "description": "A pokedex clone, built in React, that utilizes Alchemy Code Labs pokemon API to retrieve data. Has ability to filter results based on the users request.",
       "image": "pokedexClone.png",
       "url": "https://github.com/hunterdanielson/pokedex",
-      "github": "https://github.com/hunterdanielson/pokedex"
+      "githubFE": "https://github.com/hunterdanielson/pokedex",
+      "tech": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ]
     }
   ],
   "testimonials": {
