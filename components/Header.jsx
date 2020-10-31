@@ -1,25 +1,22 @@
-import style from '../styles/Header.module.css'
+import style from '../styles/Header.module.scss'
 
-const Header = ({ main: { name, occupation, description, city } }) => {
+const Header = ({ main: { name, occupation, description, address: { city } } }) => {
 
     return (
         <>
-            <header className={style.homeWrap}>
-                <div id="home" className={style.spacer}></div>
-                <div className="row banner">
-                    <div className="banner-text">
-                        <h1 className="responsive-headline">I'm {name}.</h1>
+            <header id="home" className={style.homeWrap}>
+                <div className={`${style.banner}`}>
+                    <div>
+                        <h1>I'm {name}.</h1>
                         <h3>I'm a {city} based <span>{occupation}</span>. {description}.</h3>
-                        <hr />
+
                         <ul className="social">
                             {/* {networks} */}
                         </ul>
                     </div>
                 </div>
 
-                <p className="scrolldown">
-                    <a className="smoothscroll" href="#about"><i className="icon-down-circle"></i></a>
-                </p>
+                <a className={style.scrollDown} href="#about"><i className="fas fa-arrow-circle-down"></i></a>
 
             </header>
         </>

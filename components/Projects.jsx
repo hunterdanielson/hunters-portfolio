@@ -20,7 +20,7 @@ const Projects = ({ projects }) => {
                         <i className={`fas fa-arrow-right ${style.arrow}`}></i>
                     </a>
                     <a href={githubFE} className={style.frontEndLink} title={`${title} github Front End`}>
-                        <i className="fab fa-github"></i>
+                        <i className="fab fa-github-square"></i>
                     </a>
                     {
                         githubBE && <a href={githubBE} className={style.backEndLink} title={`${title} github Back End`}>
@@ -47,9 +47,11 @@ const Projects = ({ projects }) => {
         <section id="projects" className={style.projectsContainer}>
 
             <h1>Check Out Some of My Projects.</h1>
-            <i class="fas fa-arrow-right"></i>
-            <i class="fab fa-github"></i>
+
+            <i class="fab fa-github-square"></i>
+            <p>Github Front-end Code</p>
             <i class="fas fa-server"></i>
+            <p>Github Back-end Code</p>
             <div id="portfolio-wrapper" className={style.grid}>
                 {projectsDisplay}
             </div>

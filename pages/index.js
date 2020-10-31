@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
 import { main, resume, projects } from '../public/resumeData';
 import Header from '../components/Header';
