@@ -1,6 +1,7 @@
-import style from '../styles/Header.module.scss'
+import style from '../styles/Header.module.scss';
+import Socials from './Socials';
 
-const Header = ({ main: { name, occupation, description, address: { city } } }) => {
+const Header = ({ main: { name, occupation, description, address: { city }, socials } }) => {
 
     return (
         <>
@@ -10,9 +11,7 @@ const Header = ({ main: { name, occupation, description, address: { city } } }) 
                         <h1>I'm {name}.</h1>
                         <h3>I'm a {city} based <span>{occupation}</span>. {description}.</h3>
 
-                        <ul className="social">
-                            {/* {networks} */}
-                        </ul>
+                        <Socials socials={socials} />
                     </div>
                 </div>
 

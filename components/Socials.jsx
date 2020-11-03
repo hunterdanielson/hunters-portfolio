@@ -1,11 +1,13 @@
+import style from '../styles/Socials.module.scss';
+
 const Socials = ({ socials }) => {
     const socialsDisplay = socials.map(({ url, name, className }) => {
-        return <li key={name}><a href={url}><p>{name}</p><i className={className}></i></a></li>
+        return <li key={name}><a href={url}><i className={className}></i></a></li>
     })
 
     return (
         <section>
-            <ul className="social-links">
+            <ul className={style.socialLinks}>
                 {socialsDisplay}
             </ul>
         </section>

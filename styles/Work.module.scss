@@ -1,0 +1,48 @@
+.workContainer {
+  padding-top: 36px;
+  background:  #F0F1ED;
+  padding-bottom: 36px;
+  color: #303D3F;
+  line-height: 1.6;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  border-bottom: 1px solid #617A7E;
+
+
+  h1 {
+    text-align: center;
+    font: 18px/48px 'opensans-bold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+
+    span {
+      border-bottom: 3px solid #617A7E;
+      padding-bottom: 6px;
+    }
+  }
+  .singleWork {
+    padding: 0 20px 20px 20px;
+
+    h3 {
+      font: 25px/30px 'opensans-bold', sans-serif;
+    }
+    p {
+      color: #3e4f52;
+      margin-bottom: 18px;
+    }
+    
+    .info {
+      font-family: 'Libre Baskerville', serif;
+      color: #495558;
+      margin-bottom: 12px;
+      margin-top: 8px;
+    }
+
+    .date {
+      font-family: 'opensans-bold', sans-serif;
+    }
+  }
+
+}
+

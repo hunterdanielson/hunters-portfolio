@@ -1,0 +1,59 @@
+.aboutContainer {
+  padding-top: 36px;
+  background: #303D3F;
+  padding-bottom: 36px;
+  color: #F0F1ED;
+  line-height: 1.6;
+}
+
+.aboutText {
+  padding: 10%;
+  display: flex;  
+  flex-flow: row wrap;
+
+  > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+
+  h2 {
+    font: 22px/30px 'opensans-bold', sans-serif;
+    margin-bottom: 8px;
+  }
+
+  p {
+    color: #d4d4d4;
+  }
+}
+
+.downloadContainer {
+  align-self: flex-end;
+}
+
+.resumeDownload {
+  font: 16px/30px 'opensans-bold', sans-serif;
+  padding: 12px 20px;
+  background: #617A7E;
+  cursor: pointer;
+
+  i {
+    margin-right: 12px;
+  }
+
+  &:hover {
+    color: #617A7E;
+    background-color: #F0F1ED;
+  }
+}
+
+.clear {
+  clear:both;
+  line-height:0;
+}
+
+@media all and (min-width: 768px) {
+  .columns { 
+    flex: 1 0 0;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,28 @@
+.socialLinks {
+  position: relative;
+  width: 100%;
+  height: 8vh;
+  margin-top: 1.5em;
+  font-size: 26px;
+  text-align: center;
+  
+  li {
+    display: inline-block;
+    width: 12vw;
+    
+    a {
+      color: #fff;
+
+      :hover {
+        color: #009978;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .socialLinks {
+    font-size: 18px;
+  }
+}

@@ -20,12 +20,12 @@
       {
         "name": "linkedin",
         "url": "https://www.linkedin.com/in/hunter-danielson/",
-        "className": "fa fa-linkedin"
+        "className": "fab fa-linkedin-in"
       },
       {
         "name": "github",
         "url": "http://github.com/hunterdanielson",
-        "className": "fa fa-github"
+        "className": "fab fa-github"
       }
     ]
   },

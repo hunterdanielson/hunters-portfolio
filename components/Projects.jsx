@@ -1,4 +1,4 @@
-import style from '../styles/Projects.module.scss'
+import style from '../styles/Projects.module.scss';
 
 const Projects = ({ projects }) => {
     const projectsDisplay = projects.map(({ image, title, url, description, tech, githubFE, githubBE }) => {
@@ -48,10 +48,6 @@ const Projects = ({ projects }) => {
 
             <h1>Check Out Some of My Projects.</h1>
 
-            <i class="fab fa-github-square"></i>
-            <p>Github Front-end Code</p>
-            <i class="fas fa-server"></i>
-            <p>Github Back-end Code</p>
             <div id="portfolio-wrapper" className={style.grid}>
                 {projectsDisplay}
             </div>
