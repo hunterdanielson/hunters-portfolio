@@ -3,19 +3,15 @@
     "name": "Hunter Danielson",
     "occupation": "Software Developer",
     "description": "I am a constant learner, and builder. Two of the thing I enjoy the most about programming is being able to create cool things such as games or visually pleasing pieces, and being able to solve problems",
-    "image": "mydog.jpg",
     "bio": "I enjoy learning new technologies and working with ones such as React, Python, and many others. Working on a team or individually is fine with me. In my free time I enjoy playing games with friends, and spending time outside in the elements. I also am an animal lover and have two dogs which I love spending time with.",
     "contactmessage": "Please don't hesistate to get into contact with me!",
     "email": "hunterleedanielson@gmail.com",
-    "phone": "",
     "address": {
-      "street": "",
       "city": "Hillsboro",
-      "state": "OR",
-      "zip": ""
+      "state": "OR"
     },
     "website": "http://www.hunterdanielson.com",
-    "resumedownload": "HD-Resume.pdf",
+    "resumeDownload": "/header-background.jpg",
     "socials": [
       {
         "name": "linkedin",
@@ -171,8 +167,8 @@
       ]
     }
   ],
-  "testimonials": {
-    "testimonials": [
+  "quotes": {
+    "quotes": [
       {
         "text": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
         "user": "Martin Fowler"

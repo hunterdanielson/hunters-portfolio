@@ -4,6 +4,7 @@ const about = () => {
   return (
     <div>
       about
+      <img src='/header-background.jpg' />
     </div>
   )
 }

@@ -4,41 +4,38 @@ const Projects = ({ projects }) => {
     const projectsDisplay = projects.map(({ image, title, url, description, tech, githubFE, githubBE }) => {
         const projectImage = '/portfolio/' + image;
         return <div key={title} className={style.card}>
+            <a href={url} title={title}>
+                <div className={style.overlay}></div>
+            </a>
 
             <h2>{title}</h2>
-            <div className={style.cardNoTitle}>
 
-                <a href={url} title={title}>
+            <a href={url} title={title}>
+                <img alt={title} src={projectImage} />
+            </a>
 
-                    <img alt={title} src={projectImage} />
+            <p className={style.cardDescription}>{description}</p>
 
+            <div className={style.projectLinks}>
+
+                <a href={url} title={`${title} live site`}>
+                    <i className={`fas fa-arrow-right ${style.arrow}`}></i>
                 </a>
-                <p className={style.cardDescription}>{description}</p>
-                <div className={style.rightSideCard}>
-
-                    <a href={url} title={`${title} live site`}>
-                        <i className={`fas fa-arrow-right ${style.arrow}`}></i>
+                <a href={githubFE} title={`${title} github Front End`}>
+                    <i className="fab fa-github-square"></i>
+                </a>
+                {
+                    githubBE && <a href={githubBE} title={`${title} github Back End`}>
+                        <i className="fas fa-server"></i>
                     </a>
-                    <a href={githubFE} className={style.frontEndLink} title={`${title} github Front End`}>
-                        <i className="fab fa-github-square"></i>
-                    </a>
-                    {
-                        githubBE && <a href={githubBE} className={style.backEndLink} title={`${title} github Back End`}>
-                            <i className="fas fa-server"></i>
-                        </a>
-                    }
-                    <div className={style.techStackContainer}>
-                        <h3></h3>
-                        <ul className={style.techStack}>
-                            {tech.map(singleTech => {
-                                return <li>{singleTech}</li>
-                            })}
-                        </ul>
-                    </div>
-                    <div className={style.circle}></div>
-                </div>
+                }
             </div>
 
+            <ul className={style.techStack}>
+                {tech.map(singleTech => {
+                    return <li>{singleTech}</li>
+                })}
+            </ul>
         </div>
     })
 
@@ -46,9 +43,9 @@ const Projects = ({ projects }) => {
     return (
         <section id="projects" className={style.projectsContainer}>
 
-            <h1>Check Out Some of My Projects.</h1>
+            <h1><span>Check Out Some of My Projects</span></h1>
 
-            <div id="portfolio-wrapper" className={style.grid}>
+            <div className={style.grid}>
                 {projectsDisplay}
             </div>
 

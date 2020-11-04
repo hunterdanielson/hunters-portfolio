@@ -16,7 +16,7 @@ const About = ({ main: { name, bio, email, resumeDownload, address: { city, stat
                 </section>
 
                 <p className={`${style.columns} ${style.downloadContainer}`}>
-                    <a href={resumeDownload} className={style.resumeDownload}><i className="fa fa-download"></i>Traditional Resume</a>
+                    <a href={resumeDownload} className={style.resumeDownload} download><i className="fa fa-download"></i>Traditional Resume</a>
                 </p>
                 <br className={style.clear} />
             </div>
