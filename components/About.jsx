@@ -12,7 +12,7 @@ const About = ({ main: { name, bio, email, resumeDownload, address: { city, stat
                     <h2>Contact Details</h2>
                     <h3>{name}</h3>
                     <p>{city}, {state}</p>
-                    <p>{email}</p>
+                    <a href={`mailto:${email}`}>{email}</a>
                 </section>
 
                 <p className={`${style.columns} ${style.downloadContainer}`}>

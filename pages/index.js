@@ -5,7 +5,6 @@ import Header from '../components/Header';
 import Socials from '../components/Socials';
 import About from '../components/About';
 import Education from '../components/Education';
-import Contact from '../components/Contact';
 import Projects from '../components/Projects';
 import NavBar from '../components/NavBar';
 import Skills from '../components/Skills';
@@ -23,14 +22,14 @@ export default function Main() {
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"></link>
       </Head>
 
-      <NavBar navLinks={['Home', 'About', 'Education', 'Projects', 'Contact']} />
+      <NavBar navLinks={['Home', 'About', 'Education', 'Projects']} />
       <Header main={main} />
       <About main={main} />
       <Education education={education} />
       <Work work={work} />
       <Skills skills={skills} />
       <Projects projects={projects} />
-      <Contact data={main} />
+
       <Socials socials={main.socials} />
 
     </div>
