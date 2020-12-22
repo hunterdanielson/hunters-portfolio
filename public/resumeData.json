@@ -113,6 +113,22 @@
   },
   "projects": [
     {
+      "title": "SAH",
+      "description": "Game built in vanilla JS utilizing local storage by a team of 5. Players take turns attacking and defending until only one remains!",
+      "image": "sah.png",
+      "url": "https://songs-about-humanity.netlify.app/",
+      "githubFE": "https://github.com/songs-about-humanity/sah-fe",
+      "githubBE": "https://github.com/songs-about-humanity/sah-be",
+      "tech": [
+        "React",
+        "OAuth 2.0",
+        "Spotify API",
+        "Socket.io",
+        "Express",
+        "MongoDB"
+      ]
+    },
+    {
       "title": "JHEMM-Fighters",
       "description": "Game built in vanilla JS utilizing local storage by a team of 5. Players take turns attacking and defending until only one remains!",
       "image": "jhemm-fighters-picture.png",
