@@ -114,7 +114,7 @@
   "projects": [
     {
       "title": "SAH",
-      "description": "Game built in vanilla JS utilizing local storage by a team of 5. Players take turns attacking and defending until only one remains!",
+      "description": "A social song-sharing app built in React and Node, featuring real-time, synchronous audio playback powered by Socket.io and Spotify APIs.",
       "image": "sah.png",
       "url": "https://songs-about-humanity.netlify.app/",
       "githubFE": "https://github.com/songs-about-humanity/sah-fe",
